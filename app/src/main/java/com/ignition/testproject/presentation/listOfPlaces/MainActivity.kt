@@ -1,8 +1,8 @@
-package com.ignition.testproject
+package com.ignition.testproject.presentation.listOfPlaces
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.ignition.testproject.R
+import com.ignition.testproject.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,4 +10,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
 }
