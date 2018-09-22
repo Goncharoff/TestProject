@@ -8,6 +8,7 @@ import com.ignition.testproject.di.components.AppComponent
 abstract class BaseActivity : AppCompatActivity() {
     private lateinit var appComponent: AppComponent
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         appComponent = (application as TestProjectApplication).getComponent()
         injectActivity(appComponent)

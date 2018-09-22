@@ -13,7 +13,7 @@ class DaggerVMFactory @Inject constructor(
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         val creator = creators[modelClass]
                 ?: creators.asIterable().firstOrNull { modelClass.isAssignableFrom(it.key) }?.value
-                ?: throw IllegalArgumentException(UNKNOWN_CLASS_EXCEPTION_TEXT + modelClass.simpleName)
+                ?: throw IllegalArgumentException(UNKNOWN_CLASS_EXCEPTION_TEXT + modelClass)
 
         return try {
             @Suppress(UNCHECKED_CAST)
