@@ -4,6 +4,7 @@ import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
 import com.ignition.testproject.di.DaggerVMFactory
 import com.ignition.testproject.di.ViewModelKey
+import com.ignition.testproject.presentation.listOfPlaces.MainViewModel
 import com.ignition.testproject.presentation.listOfPlaces.PlacesListVM
 import dagger.Binds
 import dagger.Module
@@ -16,6 +17,11 @@ abstract class VMModule {
     @Binds
     @Singleton
     abstract fun bindViewModelFactory(factory: DaggerVMFactory): ViewModelProvider.Factory
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MainViewModel::class)
+    internal abstract fun bindMainViewModel(mainViewModel: MainViewModel): ViewModel
 
     @Binds
     @IntoMap

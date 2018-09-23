@@ -7,4 +7,6 @@
     <dimen name="cv_text_name_top_bottom_margin">50dp</dimen>
     <dimen name="cv_name_left_margin">8dp</dimen>
     <dimen name="cv_name_text_margin">16dp</dimen>
+    <dimen name="retry_button_margin">16dp</dimen>
+    <dimen name="btn_height">48dp</dimen>
 </resources>

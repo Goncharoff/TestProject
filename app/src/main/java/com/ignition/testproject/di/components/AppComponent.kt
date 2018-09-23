@@ -20,5 +20,7 @@ interface AppComponent {
 
     fun createPlacesListFragmentComponent(): PlacesListFragmentComponent
 
+    fun createErrorFragmentComponent(): ErrorFragmentComponent
+
     fun inject(target: Application)
 }
