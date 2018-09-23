@@ -18,8 +18,15 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            buildConfigField "String", "API_URL", "\"http://sms.servio.support:32892/\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "API_URL", "\"http://sms.servio.support:32892/\""
+
         }
     }
 }
@@ -40,6 +47,10 @@ dependencies {
     //async, networking
     implementation "com.squareup.retrofit2:retrofit:$versions.retrofit2"
     implementation "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit2"
+    implementation "com.google.code.gson:gson:$versions.gson"
+    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
 
     //architecture components
     implementation "android.arch.lifecycle:extensions:$versions.lifecycle"

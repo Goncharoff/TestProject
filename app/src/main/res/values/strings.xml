@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestProject</string>
+    <string name="places_title">Places union list</string>
+    <string name="error_try_again">Ошибка сети, повторите попытку</string>
+    <string name="network_error">Произошла ошибка, повторите попытку позже</string>
+    <string name="try_again">Повторить попытку</string>
+    <string name="check_internet">Проверьте подключение к интернету</string>
 </resources>
