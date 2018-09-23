@@ -8,6 +8,6 @@ data class PlaceUnions(
 
         @SerializedName("PlaceUnions")
         @Expose
-        var placeUnions: List<PlaceUnion>
+        var placeUnions: MutableList<PlaceUnion>
 
 )

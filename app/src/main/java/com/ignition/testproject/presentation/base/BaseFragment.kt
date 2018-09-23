@@ -11,7 +11,7 @@ import com.ignition.testproject.utils.NavigationRouter
 abstract class BaseFragment : Fragment() {
     private lateinit var appComponent: AppComponent
     private lateinit var connectivityManager: ConnectivityManager
-    lateinit var navigatorRouter: NavigationRouter
+    private lateinit var navigatorRouter: NavigationRouter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         appComponent = (requireActivity().application as TestProjectApplication).getComponent()

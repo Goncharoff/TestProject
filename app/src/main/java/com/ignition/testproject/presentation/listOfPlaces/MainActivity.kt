@@ -13,7 +13,7 @@ class MainActivity : BaseActivity() {
         component.createMainActivityComponent().inject(this)
     }
 
-    lateinit var navigatorRouter: NavigationRouter
+    private lateinit var navigatorRouter: NavigationRouter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
